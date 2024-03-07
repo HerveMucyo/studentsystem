@@ -1,82 +1,85 @@
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 .add-student {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .form-group {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .form-group input {
-  width: 100%;
-  padding: 8px;
+    width: 100%;
+    padding: 8px;
 }
 
 .add-student button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .add-student button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 .students-list table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
 .students-list th,
 .students-list td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
 .students-list th {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 .students-list tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 .students-list button {
-  margin-right: 5px;
-  padding: 5px 10px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+    margin-right: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .students-list button.edit {
-  background-color: #28a745; /* Bootstrap success color */
+    background-color: #28a745;
+    /* Bootstrap success color */
 }
 
 .students-list button.delete {
-  background-color: #dc3545; /* Bootstrap danger color */
+    background-color: #dc3545;
+    /* Bootstrap danger color */
 }
 
 .students-list button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .error {
-  color: #dc3545; /* Red color for error message */
-  margin-bottom: 10px;
+    color: #dc3545;
+    /* Red color for error message */
+    margin-bottom: 10px;
 }
