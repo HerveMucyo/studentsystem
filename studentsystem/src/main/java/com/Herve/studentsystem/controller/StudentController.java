@@ -17,13 +17,23 @@ public class StudentController {
     @PostMapping("/add")
     public String add(@RequestBody Student student){
         studentService.saveStudent(student);
-
         return "New student saved successfully";
     }
-    
+
     @GetMapping("/getAll")
     public List<Student> list(){
-
         return studentService.getAllStudents();
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public String delete(@PathVariable Long id){
+        studentService.deleteStudent(id);
+        return "Student deleted successfully";
+    }
+
+    @PutMapping("/edit/{id}")
+    public String edit(@PathVariable Long id, @RequestBody Student student){
+        studentService.updateStudent(id, student);
+        return "Student updated successfully";
     }
 }

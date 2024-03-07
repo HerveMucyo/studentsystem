@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-student {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group {
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-group input {
+  width: 100%;
+  padding: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-student button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-student button:hover {
+  background-color: #0056b3;
+}
+
+.students-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.students-list th,
+.students-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.students-list th {
+  background-color: #f2f2f2;
+}
+
+.students-list tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.students-list button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.students-list button.edit {
+  background-color: #28a745; /* Bootstrap success color */
+}
+
+.students-list button.delete {
+  background-color: #dc3545; /* Bootstrap danger color */
+}
+
+.students-list button:hover {
+  opacity: 0.8;
+}
+
+.error {
+  color: #dc3545; /* Red color for error message */
+  margin-bottom: 10px;
 }
